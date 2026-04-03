@@ -1,0 +1,21 @@
+q4os-welcome (4.3.2-a1) UNRELEASED; urgency=medium
+
+  * Code optimization
+  * Enable to build TDE 14.1.5 and higher
+
+ -- Q4OS Team <devteam@q4os.org>  Wed, 10 Dec 2025 19:31:29 +0100
+
+q4os-welcome (4.3.1-a1) UNRELEASED; urgency=medium
+
+  * Use tdeconfig class instead of kreadconfig command
+  * Fix qmake config
+  * Minor update comments
+  * Fix screen scaling button for Plasma6
+  * Adapt for the new Devpack version
+  * Fix qtt_debug function
+  * Move to debhelper build framework
+  * Fix desktop effects button for Plasma6
+  * Update year of release
+
+ -- Q4OS Team <devteam@q4os.org>  Wed, 14 May 2025 21:04:49 +0200
+

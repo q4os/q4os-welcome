@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TForm_ui_form3</class>
+ <widget class="QDialog" name="TForm_ui_form3">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Start menu configuration</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <layout class="QHBoxLayout">
+     <property name="spacing">
+      <number>15</number>
+     </property>
+     <item>
+      <spacer name="spacer1">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="pixmapLabel1">
+       <property name="pixmap">
+        <pixmap resource="resource1.qrc">:/newPrefix/background1.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="textLabel1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>textLabel1</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <property name="spacing">
+      <number>11</number>
+     </property>
+     <item>
+      <widget class="QGroupBox" name="buttonGroup1">
+       <property name="title">
+        <string>Menu type</string>
+       </property>
+       <widget class="QRadioButton" name="radioButton1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>KickOff type menu</string>
+        </property>
+        <property name="text">
+         <string>&amp;KickOff</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Two panel menu with search line</string>
+        </property>
+        <property name="text">
+         <string>Bo&amp;urbon</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Classic style cascading menu</string>
+        </property>
+        <property name="text">
+         <string>C&amp;lassic</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="buttonGroup2">
+       <property name="title">
+        <string>Menu structure</string>
+       </property>
+       <widget class="QRadioButton" name="radioButton4">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>40</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Menu items organized by Applications</string>
+        </property>
+        <property name="text">
+         <string>&amp;Q4OS</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton5">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>70</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Menu items organized by Categories</string>
+        </property>
+        <property name="text">
+         <string>Ca&amp;tegories</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="spacer3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>16</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item>
+      <spacer name="spacer2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>50</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <spacer name="spacer4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>pushButton1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>pushButton4</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+   <include location="resource1.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton1</sender>
+   <signal>clicked()</signal>
+   <receiver>TForm_ui_form3</receiver>
+   <slot>pushButton1_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton4</sender>
+   <signal>clicked()</signal>
+   <receiver>TForm_ui_form3</receiver>
+   <slot>pushButton4_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

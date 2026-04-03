@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name=Q4OS Welcome Screen
+# GenericName=Q4OS Welcome Screen
+# Comment=Q4OS Welcome Screen
+Exec=/usr/bin/welcome-screen.exu
+Icon=welcome-screen
+Type=Application
+Categories=System;
+StartupNotify=false
+# Terminal=false
+# TerminalOptions=
+OnlyShowIn=TDE;
+X-TDE-autostart-phase=2
+X-TDE-autostart-after=panel
+# X-TDE-autostart-condition=q4welcomescreenrc:General:Autostart:false
+X-KDE-autostart-phase=2
+X-KDE-autostart-after=panel
+# X-KDE-autostart-condition=q4welcomescreenrc:General:AutoStart:false
+X-LXQt-Need-Tray=true
+# NoDisplay=true

@@ -1,0 +1,113 @@
+cmake_minimum_required(VERSION 2.8)
+
+ # Set project's name
+  PROJECT( welcome-screen.exu )
+
+# ************ custom variables - begin ******************
+  # with SET() command you can change variables or define new ones
+  # here we define PROJECT1_SRCS variable that contains a list of all .cpp files
+  # note that we don't need \ at the end of line
+  SET( PROJECT1_SRCS
+       ./src/appmain.cpp
+       ./src/form1.cpp
+       ./src/form2.cpp
+#       ./src/form3.cpp
+#       ./src/lib_q4_pty.c
+ )
+
+  # another list, this time it includes all header files that should be treated with moc
+  SET( PROJECT1_MOC_HDRS
+       ./src/appmain.h
+       ./src/form1.h
+       ./src/form2.h
+#       ./src/form3.h
+#       ./src/lib_q4_pty.h
+  )
+
+  # some .ui files
+  SET( PROJECT1_UIS
+       ./src/ui_form1.ui
+       ./src/ui_form2.ui
+  )
+
+  # and finally an resource file
+  SET( PROJECT1_RCS
+  #     ./src/rc/welcome-screen.qrc
+  )
+
+  SET( KDE_LIBS_ADDS
+       -lq4os_term
+       -lutil
+       -lkdeui
+  )
+
+  SET( INCLUDE_DIR_ADDS
+       /usr/include/tqt
+  )
+
+#  SET( CMAKE_BUILD_TYPE Debug )
+
+# ************ custom variables - end  ******************
+
+  # Module to pack generated output
+  #INCLUDE( CPack )
+
+  # This command finds KDE3/Qt3 libraries and sets required variables
+  # Note that it's Qt3, not QT3 or qt3
+  FIND_PACKAGE( KDE3 REQUIRED )
+  #FIND_PACKAGE( Qt3 REQUIRED )
+
+  #MESSAGE(STATUS "module path : ${CMAKE_ROOT}")
+  #SET(CMAKE_VERBOSE_MAKEFILE ON)
+
+  # Enable warnings
+  #ADD_DEFINITIONS( -Wall )
+
+  ADD_DEFINITIONS( ${KDE3_DEFINITIONS} ${QT_DEFINITIONS} )
+
+  LINK_DIRECTORIES( ${KDE3_LIB_DIR} )
+
+  # We need this to be able to include headers produced by uic in our code
+  # (CMAKE_BINARY_DIR holds a path to the build directory, while INCLUDE_DIRECTORIES() works just like INCLUDEPATH from qmake)
+  INCLUDE_DIRECTORIES( ${KDE3_INCLUDE_DIR} ${QT_INCLUDE_DIR} ${INCLUDE_DIR_ADDS} ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR} )
+
+  #SET(QT_WRAP_UI "YES")
+  KDE3_ADD_UI_FILES( PROJECT1_UI_HDRS ${PROJECT1_UIS} )
+
+  KDE3_ADD_MOC_FILES ( PROJECT1_MOC_SRCS ${PROJECT1_MOC_HDRS} )
+  #KDE3_AUTOMOC( PROJECT1_MOC_SRCS "./src/test01.cpp" "./src/form1.cpp" )
+
+  # Use this to generate DCOP skeletions from the listed headers.
+  #KDE3_ADD_DCOP_SKELS(SRCS_VAR header1.h ... headerN.h )
+
+  # Use this to generate DCOP stubs from the listed headers.
+  #KDE3_ADD_DCOP_STUBS(SRCS_VAR header1.h ... headerN.h )
+
+  # Use this to add KDE kconfig compiler files to your application/library.
+  #KDE3_ADD_KCFG_FILES(SRCS_VAR file1.kcfgc ... fileN.kcfgc )
+
+  # Create a KDE plugin (KPart, kioslave, etc.) from the given source files.
+  # If WITH_PREFIX is given, the resulting plugin will have the prefix "lib", otherwise it won't.
+  # It creates and installs an appropriate libtool la-file.
+  #KDE3_ADD_KPART(name [WITH_PREFIX] file1 ... fileN )
+
+  # Create a KDE application in the form of a module loadable via kdeinit.
+  # A library named kdeinit_<name> will be created and a small executable which links to it.
+  #KDE3_ADD_KDEINIT_EXECUTABLE(name file1 ... fileN )
+
+  # Here we instruct CMake to build "welcome-screen.exu" executable from all of the source files.
+  # Identical to ADD_EXECUTABLE()
+  KDE3_ADD_EXECUTABLE( welcome-screen.exu ${PROJECT1_SRCS} ${PROJECT1_MOC_SRCS} ${PROJECT1_RC_SRCS} ${PROJECT1_UI_HDRS} ${KDE3ProjectSources} )
+
+  # We have to tell CMake what libraries our executable needs,
+  # Luckily FIND_PACKAGE prepared QT_AND_KDECORE_LIBS variable for us:
+  TARGET_LINK_LIBRARIES( welcome-screen.exu ${QT_AND_KDECORE_LIBS} ${KDE_LIBS_ADDS} )
+
+  INSTALL( TARGETS welcome-screen.exu DESTINATION /usr/bin/ )
+  #INSTALL( FILES src/data/some_script.sh DESTINATION /usr/share/apps/q4os_system/bin/ )
+  INSTALL( FILES src/data/q4os-welcome-screen.desktop DESTINATION /usr/share/applications/ )
+  INSTALL( FILES src/data/hi16-app-test01.png DESTINATION /usr/share/icons/hicolor/16x16/apps/ RENAME q4os-welcome-screen.png )
+  INSTALL( FILES src/data/hi32-app-test01.png DESTINATION /usr/share/icons/hicolor/32x32/apps/ RENAME q4os-welcome-screen.png )
+  INSTALL( FILES src/data/hi48-app-test01.png DESTINATION /usr/share/icons/hicolor/48x48/apps/ RENAME q4os-welcome-screen.png )
+  INSTALL( FILES src/data/hi64-app-test01.png DESTINATION /usr/share/icons/hicolor/64x64/apps/ RENAME q4os-welcome-screen.png )
+  INSTALL( FILES src/data/hi128-app-test01.png DESTINATION /usr/share/icons/hicolor/128x128/apps/ RENAME q4os-welcome-screen.png )

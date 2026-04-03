@@ -1,0 +1,211 @@
+diff -uNr .outdir_plasma.a/src/data/q4os-welcome-screen.desktop .outdir_plasma.b/src/data/q4os-welcome-screen.desktop
+--- .outdir_plasma.a/src/data/q4os-welcome-screen.desktop	2019-10-17 13:15:25.140179092 +0200
++++ .outdir_plasma.b/src/data/q4os-welcome-screen.desktop	2019-10-17 13:15:58.131752123 +0200
+@@ -2,14 +2,14 @@
+ Name=Q4OS Welcome Screen
+ # GenericName=Q4OS Welcome Screen
+ # Comment=Q4OS Welcome Screen
+-Exec=/usr/bin/welcome-screen.exu
++Exec=/usr/bin/welcome-screen5.exu
+ Icon=welcome-screen
+ Type=Application
+ Categories=System;
+ StartupNotify=false
+ # Terminal=false
+ # TerminalOptions=
+-OnlyShowIn=TDE;
++OnlyShowIn=KDE;LXQt;
+ X-TDE-autostart-phase=2
+ X-TDE-autostart-after=panel
+ # X-TDE-autostart-condition=q4welcomescreenrc:General:Autostart:false
+diff -uNr .outdir_plasma.a/src/form1.ui .outdir_plasma.b/src/form1.ui
+--- .outdir_plasma.a/src/form1.ui	2019-10-17 13:15:26.716158540 +0200
++++ .outdir_plasma.b/src/form1.ui	2019-10-17 13:15:58.147751918 +0200
+@@ -44,7 +44,7 @@
+                   </size>
+                 </property>
+                 <property name="pixmap">
+-                  <pixmap>image0</pixmap>
++                  <pixmap resource="resource1.qrc">:/newPrefix/background1.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                   <bool>true</bool>
+@@ -393,10 +393,6 @@
+     <tabstop>pushButton4</tabstop>
+     <tabstop>pushButton20</tabstop>
+   </tabstops>
+-  <images>
+-    <image name="image0">
+-    </image>
+-  </images>
+   <connections>
+     <connection>
+       <sender>pushButton3</sender>
+diff -uNr .outdir_plasma.a/src/form2.cpp .outdir_plasma.b/src/form2.cpp
+--- .outdir_plasma.a/src/form2.cpp	2019-10-17 13:15:26.736158280 +0200
++++ .outdir_plasma.b/src/form2.cpp	2019-10-17 13:15:58.151751866 +0200
+@@ -16,10 +16,11 @@
+ //---------------------------------------------------------------------------
+ TForm2 *Form2;
+ //---------------------------------------------------------------------------
+-TForm2::TForm2( QWidget* parent, const char* name, Qt::WFlags fl )
+- : TForm_ui_form2( parent,name,fl )
++TForm2::TForm2( QWidget* parent, Qt::WindowFlags fl )
++ : QDialog( parent,fl )
+ {
+-    setCaption( i18n("Start menu configuration") + " - Welcome screen");
++    setupUi(this);
++    setWindowTitle( i18n("Start menu configuration") + " - Welcome screen");
+ 
+ //   QPixmap ret = KGlobal::iconLoader()->loadIcon("messagebox_info", KIcon::NoGroup, KIcon::SizeMedium, KIcon::DefaultState, 0, true);
+ //   pixmapLabel1->setPixmap(ret);
+diff -uNr .outdir_plasma.a/src/form2.h .outdir_plasma.b/src/form2.h
+--- .outdir_plasma.a/src/form2.h	2019-10-17 13:15:26.768157863 +0200
++++ .outdir_plasma.b/src/form2.h	2019-10-17 13:15:58.155751815 +0200
+@@ -18,7 +18,8 @@
+  * @version $VERSION$
+  */
+ //---------------------------------------------------------------------------
+-class TForm2 : public TForm_ui_form2
++class TForm2 : public QDialog, private Ui::TForm_ui_form2
++//class TForm2 : public TForm_ui_form2
+ {
+     Q_OBJECT
+ 
+@@ -27,7 +28,7 @@
+     /**
+      * Default Constructor
+      */
+-    TForm2( QWidget* parent = 0, const char* name = 0, Qt::WFlags fl = 0 );
++    TForm2( QWidget* parent = 0, Qt::WindowFlags fl = 0 );
+ 
+     /**
+      * Default Destructor
+diff -uNr .outdir_plasma.a/src/form2.ui .outdir_plasma.b/src/form2.ui
+--- .outdir_plasma.a/src/form2.ui	2019-10-17 13:15:26.744158175 +0200
++++ .outdir_plasma.b/src/form2.ui	2019-10-17 13:15:58.163751712 +0200
+@@ -49,7 +49,7 @@
+           <item>
+             <widget class="QLabel" name="pixmapLabel1">
+               <property name="pixmap">
+-                <pixmap>image0</pixmap>
++                <pixmap resource="resource1.qrc">:/newPrefix/help-about.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                 <bool>false</bool>
+@@ -149,10 +149,6 @@
+     </layout>
+   </widget>
+   <layoutdefault spacing="10" margin="14"/>
+-  <images>
+-    <image name="image0">
+-    </image>
+-  </images>
+   <connections>
+     <connection>
+       <sender>pushButton4</sender>
+diff -uNr .outdir_plasma.a/src/form3.cpp .outdir_plasma.b/src/form3.cpp
+--- .outdir_plasma.a/src/form3.cpp	2019-10-17 13:15:26.752158071 +0200
++++ .outdir_plasma.b/src/form3.cpp	2019-10-17 13:15:58.167751660 +0200
+@@ -16,10 +16,11 @@
+ //---------------------------------------------------------------------------
+ TForm3 *Form3;
+ //---------------------------------------------------------------------------
+-TForm3::TForm3( QWidget* parent, const char* name, Qt::WFlags fl )
+- : TForm_ui_form3( parent,name,fl )
++TForm3::TForm3( QWidget* parent, Qt::WindowFlags fl )
++ : QDialog( parent,fl )
+ {
+-    setCaption( i18n("Start menu configuration") + " - Welcome screen");
++    setupUi(this);
++    setWindowTitle( i18n("Start menu configuration") + " - Welcome screen");
+ 
+ //   QPixmap ret = KGlobal::iconLoader()->loadIcon("messagebox_info", KIcon::NoGroup, KIcon::SizeMedium, KIcon::DefaultState, 0, true);
+ //   pixmapLabel1->setPixmap(ret);
+diff -uNr .outdir_plasma.a/src/form3.h .outdir_plasma.b/src/form3.h
+--- .outdir_plasma.a/src/form3.h	2019-10-17 13:15:26.748158124 +0200
++++ .outdir_plasma.b/src/form3.h	2019-10-17 13:15:58.171751610 +0200
+@@ -18,7 +18,8 @@
+  * @version $VERSION$
+  */
+ //---------------------------------------------------------------------------
+-class TForm3 : public TForm_ui_form3
++class TForm3 : public QDialog, private Ui::TForm_ui_form3
++//class TForm3 : public TForm_ui_form3
+ {
+     Q_OBJECT
+ 
+@@ -27,7 +28,7 @@
+     /**
+      * Default Constructor
+      */
+-    TForm3( QWidget* parent = 0, const char* name = 0, Qt::WFlags fl = 0 );
++    TForm3( QWidget* parent = 0, Qt::WindowFlags fl = 0 );
+ 
+     /**
+      * Default Destructor
+diff -uNr .outdir_plasma.a/src/form3.ui .outdir_plasma.b/src/form3.ui
+--- .outdir_plasma.a/src/form3.ui	2019-10-17 13:15:26.756158020 +0200
++++ .outdir_plasma.b/src/form3.ui	2019-10-17 13:15:58.175751557 +0200
+@@ -44,7 +44,7 @@
+           <item>
+             <widget class="QLabel" name="pixmapLabel1">
+               <property name="pixmap">
+-                <pixmap>image0</pixmap>
++                <pixmap resource="resource1.qrc">:/newPrefix/help-about.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                 <bool>false</bool>
+@@ -81,20 +81,9 @@
+           </property>
+           <item>
+             <widget class="QGroupBox" name="buttonGroup1">
+-              <property name="sizePolicy">
+-                <sizepolicy>
+-                  <hsizetype>5</hsizetype>
+-                  <vsizetype>0</vsizetype>
+-                  <horstretch>0</horstretch>
+-                  <verstretch>0</verstretch>
+-                </sizepolicy>
+-              </property>
+               <property name="title">
+                 <string>Menu type</string>
+               </property>
+-              <property name="exclusive">
+-                <bool>true</bool>
+-              </property>
+               <property name="selectedId" stdset="0">
+                 <number>2</number>
+               </property>
+@@ -156,20 +145,9 @@
+           </item>
+           <item>
+             <widget class="QGroupBox" name="buttonGroup2">
+-              <property name="sizePolicy">
+-                <sizepolicy>
+-                  <hsizetype>5</hsizetype>
+-                  <vsizetype>0</vsizetype>
+-                  <horstretch>0</horstretch>
+-                  <verstretch>0</verstretch>
+-                </sizepolicy>
+-              </property>
+               <property name="title">
+                 <string>Menu structure</string>
+               </property>
+-              <property name="exclusive">
+-                <bool>true</bool>
+-              </property>
+               <property name="toolTip" stdset="0">
+                 <string/>
+               </property>
+@@ -300,10 +278,6 @@
+     </layout>
+   </widget>
+   <layoutdefault spacing="6" margin="11"/>
+-  <images>
+-    <image name="image0">
+-    </image>
+-  </images>
+   <connections>
+     <connection>
+       <sender>pushButton1</sender>

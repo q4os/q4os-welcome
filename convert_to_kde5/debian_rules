@@ -1,0 +1,54 @@
+#!/usr/bin/make -f
+
+# include /usr/share/cdbs/1/rules/debhelper.mk
+# include /usr/share/cdbs/1/class/cmake.mk
+# include debian/cdbs/debian-tde.mk
+# 
+# DEB_CMAKE_EXTRA_FLAGS := \
+#  -DCMAKE_EXPORT_COMPILE_COMMANDS="ON" \
+#  -DCMAKE_INSTALL_PREFIX="/opt/trinity" \
+#  -DCONFIG_INSTALL_DIR="/etc/trinity" \
+#  -DSYSCONF_INSTALL_DIR="/etc" \
+#  -DXDG_MENU_INSTALL_DIR="/etc/xdg/menus" \
+#  -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+#  -DCMAKE_VERBOSE_MAKEFILE="ON" \
+#  -DCMAKE_SKIP_RPATH="OFF" \
+#  -DBUILD_ALL="ON" \
+#  -DWITH_ALL_OPTIONS="ON"
+
+# See debhelper(7) (uncomment to enable).
+# Output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+
+# See FEATURE AREAS in dpkg-buildflags(1).
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# See ENVIRONMENT in dpkg-buildflags(1).
+# Package maintainers to append CFLAGS.
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+# Package maintainers to append LDFLAGS.
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+
+%:
+	dh $@
+
+
+# dh_make generated override targets.
+# This is an example for Cmake (see <https://bugs.debian.org/641051>).
+# override_dh_auto_configure:
+# 	dh_auto_configure -- \
+# 	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
+
+# override_dh_auto_build:
+# 	tqmake base.pro && make
+# 	find . -iname "*.cpp" -o -iname "*.h" | xargs xgettext --no-location -C -s --no-wrap --keyword=i18n --keyword=tr --package-name "Q4OS Welcome Screen" -o ../welcome-screen.pot
+
+# override_dh_shlibdeps:
+# 	LD_LIBRARY_PATH=../../q4os_api/build/:$LD_LIBRARY_PATH dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info #use -l option ?
+
+# override_dh_installdeb:
+# 	mkdir -p debian/q4os-app/usr/share/apps/q4os_system/bin/
+# 	ln -s /usr/bin/app.exu debian/q4os-app/usr/share/apps/q4os_system/bin/app.exu
+# 	dh_installdeb

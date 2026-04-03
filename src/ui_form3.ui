@@ -1,0 +1,365 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>TForm_ui_form3</class>
+<widget class="TQDialog">
+    <property name="name">
+        <cstring>TForm_ui_form3</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>391</width>
+            <height>289</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Start menu configuration</string>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="TQLayoutWidget">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="spacing">
+                    <number>15</number>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Fixed</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>10</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="TQLabel">
+                    <property name="name">
+                        <cstring>pixmapLabel1</cstring>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image0</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+                <widget class="TQLabel">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>textLabel1</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="TQLayoutWidget">
+            <property name="name">
+                <cstring>layout5</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="spacing">
+                    <number>11</number>
+                </property>
+                <widget class="TQButtonGroup">
+                    <property name="name">
+                        <cstring>buttonGroup1</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="title">
+                        <string>Menu type</string>
+                    </property>
+                    <property name="exclusive">
+                        <bool>true</bool>
+                    </property>
+                    <property name="selectedId" stdset="0">
+                        <number>2</number>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string></string>
+                    </property>
+                    <widget class="TQRadioButton">
+                        <property name="name">
+                            <cstring>radioButton1</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>30</y>
+                                <width>140</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>KickOff</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>KickOff type menu</string>
+                        </property>
+                    </widget>
+                    <widget class="TQRadioButton">
+                        <property name="name">
+                            <cstring>radioButton2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>60</y>
+                                <width>140</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Bourbon</string>
+                        </property>
+                        <property name="checked">
+                            <bool>true</bool>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Two panel menu with search line</string>
+                        </property>
+                    </widget>
+                    <widget class="TQRadioButton">
+                        <property name="name">
+                            <cstring>radioButton3</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>90</y>
+                                <width>140</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Classic</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Classic style cascading menu</string>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="TQButtonGroup">
+                    <property name="name">
+                        <cstring>buttonGroup2</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="title">
+                        <string>Menu structure</string>
+                    </property>
+                    <property name="exclusive">
+                        <bool>true</bool>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string></string>
+                    </property>
+                    <widget class="TQRadioButton">
+                        <property name="name">
+                            <cstring>radioButton5</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>60</y>
+                                <width>140</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Categories</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Menu items organized by Categories</string>
+                        </property>
+                    </widget>
+                    <widget class="TQRadioButton">
+                        <property name="name">
+                            <cstring>radioButton4</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>30</y>
+                                <width>140</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Q4OS</string>
+                        </property>
+                        <property name="checked">
+                            <bool>true</bool>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Menu items organized by Applications</string>
+                        </property>
+                    </widget>
+                </widget>
+            </hbox>
+        </widget>
+        <spacer>
+            <property name="name">
+                <cstring>spacer3</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Fixed</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>16</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="TQLayoutWidget">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="spacing">
+                    <number>10</number>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>50</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer4</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="TQPushButton">
+                    <property name="name">
+                        <cstring>pushButton1</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>3</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>pushButton1</string>
+                    </property>
+                </widget>
+                <widget class="TQPushButton">
+                    <property name="name">
+                        <cstring>pushButton4</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>3</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>pushButton4</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="2271">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000008a649444154588595976b8c5d5515c77f6bef7dcebd77e6cefbd1177d4c07636b696a3b959447311425d04a005b4152f50b21446d84484810fd00060d7ca00111df0f5a0c410105aa8002493158a04041682ba561e8832933d399cecc9dfb3c8fbdfd70eebdd3e943ea4ed6c9cebd7badf55f6bfdf7da7b8b738e33195114b17bdfe1bb9fdebe67c31bbb0ff6ee3f3888d63ed65a7c232c9cdbc5f9cb17b276f5e207ce5e30f33bbeef1345115114e19c2393c99cd2ae7c1280c1e1633fdefcd00bdf7b75ef28156960d9a7ba58da3b93cef62c8d199fd8c264a1ccc72313bcf6ee001f0e8cd19a0ab8685917dfde78f1d5dd9d1d4f562a1552a9d4ff07a0542af1c7e776b9cd0fbfc2ec397358b7a68fab562f606ea77f5ab0d6c19bfb736c7bf903b63dbf93d64cccb7bed277cf95972cbf0dc0f74fd63d258081c1d16facbfe9d75bc6c216eed8b48ecbcf9d8d6f84208c89628b7360ab7a2282d48c09a47d8dd68ac9b2e5de47f7b0e589edaced6be2fedbaf91868606b4d6ff1bc03f77eedd74cbbd7f7f60f19273b871fd0a7a67a5299563629bac73cee19c90496bb412ca414c1c5b9408354b02182d68ad79f5bd31eef8c57616b6e6f9e9ed575e3d6b46e7939ee79d1ac0c0d0b10d57dfbcf5b69eb317f5dd71c385b828a01446f5089d03ad84d99d8d74b5352002a57244ff91094a9518a54e482fd098f1d87724e0d6cd7fe39c59110fdffd75399e907500a55289cb6e78d075ce5bc22d1bcf250cca583bdd606c1d3db39ae83dab65daefb942859d7b0651ca20c249a3316dd83b50e1ae5fbec08655597ef4ddf5522b85a92ddaf2d44e371cb471e39ac58c8fe709e39af7298b51ec9013c30432298f623924764929a60f47ae1030bbc5f0b52b3ec7cfb63e43efdc97dc0d5f5d237500073f1abefca16defeeb8ea8babcf371233928be03872d54044d6716828cffc1959b49efab77f609cc1b1229974a6e693e327cec16431a4776686a5cb56f0d88bfbb976ed4a9a9b9b13000f3ef2d233251ae999d5c0c878395113c009d4034e1cbefdc118b952c8f94bba48fb9a7d07c7d8beeb30ca784436c6e1a610b884b44a095a095a62d6ac3c8b87b71de11f2fefb97ec3daf37e2b411070d9a6adae7bdea7e9eb6d26882cf5d8458eaf0090303db69694d12871e44b014a297ccf246eab1f2121ac20948288438379868e15992c861c192fb1303df8e6b3bfdab4d2eceb1fba7c3c4ab1b4ab8963b90a4e64aaee927c04889da314588c1294164462b4085a1b94857229aa07ae144491652c1f7074bccc8123938ce72bc4d621ce92ce36d27f34ea0330afbc73e019f1d3d83866bc1c21b5a845d541c4163a9a7dd62d9f4ddad7f89ed098f6c8f89a6cc6a31cc4dcf797ff242445189b0cd87778825c31208a2d0a309e49ea6d2d2845986ee3e9e7df78d2bcfaef8388692497af10455135ed8260ab4084d83a3ccfd0dae4b3a2b70dcf4cdf098572c8f8649ea37961642220570cb0b1438cc6d72a61a173245b5ee19c254c67191aaf6086c78a44ba858942486c6d1d404281a9f964b9c8f7b7ec66d5e2766e5dbf889686a96e165bc781a1021f4d28b402ad345ab9a4242e69dde010eb008b43b0c623570cae3441eca8289828443871d5d40b4e92ea4f9544b008cfee1ae192cf4e70f1d2ce2900b163ac18a14d06a3a54e44e71c5849a8eb5cb24344402962e52896438ce7197295988c8b7002880355a55e7d172473079423573f178edb1c28ad10a710a512c7ce2152cda875387188389c750900b178bec1b4677d8a8588a201710ec422aa1675cdb943aa819563c7091dba4e7d4157f9e3aa75af821197d87636c98c5644d6d296cda0962cecc22a87f50c4a29442b44e929d10ad1ba2e283db54da7128052326d2d4a83aedad34966500aa514b16fd06199ee9614ea8265f36f6e32169bf1704ad5151311446994d218adf1b526e327c7f08923651469a3f13d85d11a6d34a2a61c5305875238a369082699d591bdc72ceae9dad1d3e0f8d80888ae8583a0500a8c52d5362a280125ea6400022923d5ac09d6268d2bb4828d1db1abd6de5992de1e32cfb7f4cceddc6dda3bda5eff4c8be6d0d151328d9dd8c862b4428be06949e64a50225502db93000842ca2894318808ce3922e730b1102947681db1b5c41198260f99ccf1e50bcf664677fb1f94738eeb2e5db2a2b53c4e737b06df685246914929d2be22ed2592a98be6e40a383c25647c45c657a4bc44d29eaeeba6b422953234b6a698ef076c5cb76c13800ac3908b562d7aebaabe39b8e2046dad197c9dd4336d34694f93a98aa735462b52def47b9def693a5b52882359eb6b3255ddb45118498eb1a6669fc90ffbd974e9c23d33badb1f84ea8d288e630e1d19bdfeba1f3cf59b592bfa882a8a288849790aa315aa5a8eb91d692e5cdccadabeae93b2d03f98e7f1578eb2f7a342bd5758eb28970af8e128a994c252211e38c4133fbfb9ae2dce39cae532beefb36357ff4d773ef2f67d672d5a4ca96889c2989497b0de378a8dab67d1db6d285542a6f52207295f3191aff0abe7fa29b82c8810c630991ba7ab2d0dc0e4f0088fdf75d9f403be76270c8200dff7f9fd9f5f737ffad7008b962f250ca1900ff08ce06b858810568ab8383ceeeae5b0b5bee392566bd259222744b180cd9fd6f9340000b517cc0b3bde7ff4870fbd7eedca55cb98d1d5c1d1d1026114e3698567144a09aad6aa71d57702586709634b14393c4fd3d991a57ffffb1c1b2df0d89d5f90c83a8ebf929f0400209fcf13c731efbc77f8fabfee38fccdf787e93b6fe522ba3b5a19cb95c997c36aafaf1f94c95b81a44734677db2198f81c163bcb3f703e665f36cbe6dc329eecaa70170e2b87feb8b6ecfc1125ddd33e8686b25dbd84053633a392f1092ac5b6cecc8e5cb4c168b8c8e8e317274884bfa6672dd97ce3dadf333020070e0c0819fec3f3c7ec54b6f0d2ff870b04c186bb28d19ba5ab3c4d631325e60b2501ccef88e737ab2dd172ced64e1ece66be6cc9dffd827d93e2300b5313c3cfcf95c2ed7343416fc2e5f8abac2c82292f481a606efa919ed0dfb7b16ccbbf58c0d02ff05d5d9f07f3ea3a1f70000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>pushButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>TForm_ui_form3</receiver>
+        <slot>pushButton1_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton4</sender>
+        <signal>clicked()</signal>
+        <receiver>TForm_ui_form3</receiver>
+        <slot>pushButton4_clicked()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>pushButton1_clicked()</slot>
+    <slot>pushButton4_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
