@@ -75,13 +75,13 @@ INSTALLS += target data02
 # TARGETDEPS += ../build/libsrc0_lib1.a
 
 INCLUDEPATH += \
- ../../../q4os_api/level3/03_shell_cmd \
+ /usr/include \
  /usr/include/tqt \
  /usr/include/tqt3 \
  /opt/trinity/include
 
 LIBS += \
-  -L../../../q4os_api/build \
+  -L/usr/lib \
   -L/usr/lib \
   -L/opt/trinity/lib \
   -lshell_cmd \
