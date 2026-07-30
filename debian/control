@@ -2,7 +2,7 @@ Source: q4os-welcome
 Section: system
 Priority: optional
 Maintainer: Q4OS_Team <devteam@q4os.org>
-Build-Depends: debhelper (>= 9~), tdelibs14-trinity-dev, q4os-api
+Build-Depends: debhelper (>= 9~), tdelibs14-trinity-dev, q4os-api, q4os-api-dev
 Standards-Version: 3.8.4
 
 Package: q4os-welcome

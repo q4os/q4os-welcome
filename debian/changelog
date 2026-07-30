@@ -1,5 +1,8 @@
 q4os-welcome (4.3.2-a1) UNRELEASED; urgency=medium
 
+  * Add q4os-api-dev to Build-Depends: q4os-api no longer ships its own
+    headers (moved to q4os-api-dev exclusively); no source changes needed
+    here, this package still links q4os-api's .so at build time as before.
   * Code optimization
   * Enable to build TDE 14.1.5 and higher
 
