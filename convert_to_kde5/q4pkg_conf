@@ -1,0 +1,45 @@
+# Q4OS package manifest - machine readable metadata for build tooling and agents
+source="q4os-welcome5"
+kind="internal"
+binaries="q4os-welcome5"
+targets="deb11 deb12 deb13 deb14 uqk3 uqk4 uqk5 rpi12"
+upstream_url=""
+upstream_watch=""
+notes="GENERATED TREE, not hand-maintained. It is produced from the Trinity
+source next door (../code_wk_copy_tde, source q4os-welcome) by that tree own
+convert_to_kde5/build01_source.sh, which ports the TQt3/Trinity code to Qt5:
+it rm -rf's its output dir, copies the TDE tree in, strips .git/,
+convert_to_kde5/ and build/, converts .ui forms and sources (qt3to4 plus the
+convert_ui3_ui5.sh / convert_src3_src5.sh sed passes, leaving the .bck copies
+seen here), applies convert_to_kde5.patch, then installs the per-file
+overrides that make it a DIFFERENT source package - sed q4os-welcome to
+q4os-welcome5 in debian/changelog, plus its own debian/control, debian/rules
+and CMakeLists. The output directory name _00_cd_wk_cpy_kde5 is hardcoded in
+that script (OUTPT_DIR1), so the _00_ prefix is the generator naming, NOT this
+workspace usual archived/inactive marker - do not rename this dir without
+editing build01_source.sh.
+RESTORED 2026-09-01 from _00_cd_wk_cpy_kde5.tar.gz (kept alongside, dated
+2025-12-10), which had been the only copy of this source in the tree. Nothing
+could build or even see the package while it was tarred up: no manifest, so
+gen_manifests.sh, version_watch.sh and ci_pkg.sh all skipped it.
+The generator is NOT cleanly re-runnable as of 2026-09-01 - build01_source.sh
+copies debian_rules, resource1.qrc and help-about.png out of convert_to_kde5/
+and mv's portinglog.txt out of it, but those files are no longer there (the mv
+is destructive and already ran), and it stops on an interactive read -p. So
+this unpacked tree is the effective source of record until someone repairs the
+generator. Because that script starts with rm -rf on this directory, a copy of
+this manifest is also kept as ../code_wk_copy_tde/convert_to_kde5/q4pkg_conf
+and copied back in by build01_source.sh, so a future regeneration neither
+drops it nor inherits the TDE tree own q4pkg.conf (which describes the other
+source, q4os-welcome / q4os-welcome-common).
+Full 8-target set confirmed live 2026-09-01: q4os-4-0-cn and q4os-5-0-cn carry
+4.2.3-a1 amd64+i386, q4os-6-0-cn 4.3.1-a1 amd64 and 4.3.2-a1 arm64,
+q4os-7-0-cn 4.3.1-a1 amd64, quark-22/24/26-04-cn 4.3.1-a1 amd64, and
+q4os-rpi-5-0-cn 4.2.3-a1 armhf. No publish_repo field, i.e. the default family
+(q4repo/quarkrp) - verified absent from qtderepo/quarktde, unlike its Trinity
+sibling q4os-welcome, which is qtde-only.
+Architecture: any, so build_pkg.sh categorical rpi12 rule applies: the live
+q4os-rpi-5-0-cn deb is still the UNTAGGED 4.2.3-a1, and the next rpi12 build
+will correctly produce 4.3.2-rpi12a1. Its Depends on q4os-welcome-common is
+unversioned, but that binary comes from the SEPARATE Trinity source, so the
+two have to be released together."

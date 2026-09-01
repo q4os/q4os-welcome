@@ -120,6 +120,10 @@ cd $THIS_SCRIPT_DIR
 echo "[I] Miscelanous actions ..."
 sed -i "s@q4os-welcome@q4os-welcome5@g" $OUTPT_DIR1/debian/changelog
 cp debian_control $OUTPT_DIR1/debian/control
+# the cp -r above brought in the TDE tree's own q4pkg.conf, which describes a
+# DIFFERENT source (q4os-welcome / q4os-welcome-common) - replace it with the
+# q4os-welcome5 one, same as debian/control just above
+cp q4pkg_conf $OUTPT_DIR1/q4pkg.conf
 cp debian_rules $OUTPT_DIR1/debian/rules
 cp CMakeLists0.txt $OUTPT_DIR1/CMakeLists.txt
 cp CMakeLists.txt $OUTPT_DIR1/src/CMakeLists.txt
