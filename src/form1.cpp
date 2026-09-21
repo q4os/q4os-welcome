@@ -273,7 +273,6 @@ int TForm1::check_ws_env()
 //---------------------------------------------------------------------------
 void TForm1::button1_click()
 {
-  if( check_vboxgutils() ) { return; }
   //mw->hide();
   //system("konqueror http://www.q4os.org/some_page.html#q4apps &");
   //system("swcentre.exu --icon swcentre &");
@@ -283,7 +282,6 @@ void TForm1::button1_click()
 //---------------------------------------------------------------------------
 void TForm1::button2_click()
 {
-  if( check_vboxgutils() ) { return; }
   mw->hide();
   //system("swprofiler.exu");
   FILE *hlpfl1 = popen( "swprofiler.exu", "w" ); pclose(hlpfl1);
@@ -292,13 +290,11 @@ void TForm1::button2_click()
 //---------------------------------------------------------------------------
 void TForm1::button3_click()
 {
-  if( check_vboxgutils() ) { return; }
   action_screen_scaling();
 }
 //---------------------------------------------------------------------------
 void TForm1::button4_click()
 {
-  if( check_vboxgutils() ) { return; }
   if(swap_button4)
     action_hw_info();
   else
@@ -307,7 +303,6 @@ void TForm1::button4_click()
 //---------------------------------------------------------------------------
 void TForm1::button5_click()
 {
-  if( check_vboxgutils() ) { return; }
   action_autologin();
 }
 //---------------------------------------------------------------------------
@@ -317,7 +312,6 @@ void TForm1::button6_click()
     KMessageBox::information( this, i18n("<p>ARM CPU architecture detected. It doesn't support proprietary multimedia codecs.</p>"), i18n("Info") );
     return;
   }*/
-  if( check_vboxgutils() ) { return; }
 //  if( ! check_swprofiler_processed() ) { return; }
   TQString codecs_setup_file = "q4os-ipcodecs";
   /*if( qaptdistr == "buster" ) {
@@ -371,21 +365,6 @@ void TForm1::slot6()
 void TForm1::on_vboxgutils_action()
 {
 }*/
-//---------------------------------------------------------------------------
-bool TForm1::check_vboxgutils()
-{
-/*WRONG: if( is_running( "vboxgutils_wrapper.sh" ) ) {*/
-
-  if( TQFile::exists( "/tmp/.vboxgutils-afT4g.tmp" ) ) {
-    KMessageBox::information( this, i18n("<p>Virtualbox installation has been detected !</p><p>Actions are disabled during Virtualbox setup, please wait until end of the Virtualbox installation.</p>"), i18n("Info") );
-    return(true);
-  }
-  if( TQFile::exists( "/tmp/.nvdinstl-afT4g.tmp" ) ) {
-    KMessageBox::information( this, i18n("<p>NVIDIA installation has been detected !</p><p>Actions are disabled during NVIDIA setup, please wait until end of the NVIDIA installation.</p>"), i18n("Info") );
-    return(true);
-  }
-  return(false);
-}
 //---------------------------------------------------------------------------
 bool TForm1::check_desktop_session()
 {

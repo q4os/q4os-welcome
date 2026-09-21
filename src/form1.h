@@ -52,7 +52,6 @@ protected slots:
 
 private:
 //    void on_vboxgutils_action();
-    bool check_vboxgutils();
     bool check_desktop_session();
 //    bool check_swprofiler_processed();
     bool check_hw();
