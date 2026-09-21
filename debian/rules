@@ -41,6 +41,15 @@
 #	dh_auto_configure -- \
 #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
 
+# No-op: debhelper auto-detects the "qmake" buildsystem from base.pro and,
+# on newer debhelper (13.x, seen on raspbian12/bookworm), its own default
+# dh_auto_configure runs a bare system "qmake -makefile ... PREFIX=/usr"
+# with no project file, which just prints usage and fails (exit 154) -
+# before override_dh_auto_build below ever runs. Suppressing the default
+# step entirely is safe: override_dh_auto_build already runs the real
+# configure+build itself via "tqmake base.pro && make".
+override_dh_auto_configure:
+
 override_dh_auto_build:
 	tqmake base.pro && make
 	find . -iname "*.cpp" -o -iname "*.h" | xargs xgettext --no-location -C -s --no-wrap --keyword=i18n --keyword=tr --package-name "Q4OS Welcome Screen" -o ../welcome-screen.pot

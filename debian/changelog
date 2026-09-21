@@ -1,5 +1,6 @@
 q4os-welcome (4.3.3-a1) UNRELEASED; urgency=medium
 
+  * Suppress the default dh_auto_configure, it breaks the rpi12 build
   * Stop blocking the buttons during NVIDIA/VirtualBox setup
   * Add q4os-api-dev to Build-Depends: q4os-api no longer ships its own
     headers (moved to q4os-api-dev exclusively); no source changes needed
