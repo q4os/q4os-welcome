@@ -1,0 +1,276 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Q4OS Welcome\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-25 08:28+0000\n"
+"PO-Revision-Date: 2026-01-10 17:57+0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+msgid "<font size=\"4\"><p align=justify><b>Welcome to Q4OS</b>, fast and powerful desktop operating system focused on long-term stability, reliability and classic style user interface.</p><p align=justify>Q4OS is installed as a very basic and clean desktop environment with the minimal software kit. Now it's the right time to adjust your new desktop, you might want to make use of tweaking shortcuts below.</p></font>"
+msgstr "<font size=\"4\"><p align=justify><b>Добро пожаловать в Q4OS</b>, быструю и мощную операционную систему, нацеленную на долгосрочную стабильность, надёжность и поддержку классического пользовательского интерфейса.</p><p align=justify>Система установлена с минимальным набором программного обеспечения. Вы можете настроить ваш новый рабочий стол с помощью ссылок ниже.</p></font>"
+
+msgid "<font size=\"4\"><p>Bypass login screen and login without entering your password after the system boot.</p></font>"
+msgstr "<font size=\"4\"><p>Позволяет после загрузки системы входить в систему сразу, без ввода вашего пароля.</p></font>"
+
+msgid "<font size=\"4\"><p>Desktop Profiler will automatically install and configure set of additional Applications and tools, all in single click.</p><p>You will be allowed to select between different desktop profiles.</p></font>"
+msgstr "<font size=\"4\"><p>Профайлер — это мастер настройки, который за один клик установит и настроит набор дополнительных программ и утилит .</p><p>Вам будет предложено на выбор несколько наборов.</p></font>"
+
+msgid "<font size=\"4\"><p>Other useful configuration options.</p></font>"
+msgstr "<font size=\"4\"><p>Другие полезные параметры настройки.</p></font>"
+
+msgid "<font size=\"4\"><p>Run an interactive script to install extra collection of professional quality codecs.</p><p>Media players such as VLC or Mplayer make use of these codecs in order to provide support for playback of DVD and multimedia files encoded through these codecs.</p></font>"
+msgstr "<font size=\"4\"><p>Запуск скрипта для установки коллекции профессиональных кодеков.</p><p>Их используют проигрыватели мультимедиа, такие как VLC или MPlayer, для воспроизведения DVD-дисков и отдельных файлов аудио и видео.</p></font>"
+
+msgid "<font size=\"4\"><p>Switch to alternative Kickoff Start menu.</p><p>Well arranged, modern style start menu offers search bar, favorites tab, history and more.</p></font>"
+msgstr "<font size=\"4\"><p>Позволяет переключиться на Kickoff, альтернативный стиль Главного меню.</p><p>Хорошо организованное современное меню, сочетающее в себе функции поиска, избранного, истории запуска и многое другое.</p></font>"
+
+msgid "<font size=\"4\"><p>You will be directed to Q4OS web resources to download and install standalone useful applications.</p></font>"
+msgstr "<font size=\"4\"><p>Вы будете перенаправлены на интернет страницу Q4OS для скачивания и установки отдельных полезных приложений.</p></font>"
+
+msgid "<p>Automatic login is now disabled.</p>"
+msgstr "<p>Автоматический вход теперь отключён.</p>"
+
+msgid "<p>Automatic login is now enabled.</p>"
+msgstr "<p>Автоматический вход теперь включён.</p>"
+
+msgid "<p>Desktop effects have been disabled.</p>"
+msgstr "<p>Эффекты рабочего стола отключены.</p>"
+
+msgid "<p>Desktop effects have been enabled. Please login again to take changes effect.</p>"
+msgstr "<p>Эффекты рабочего стола включены. Пожалуйста, войдите в систему снова, чтобы изменения вступили в силу.</p>"
+
+msgid "<p>Do you want to enable Automatic login ?</p>"
+msgstr "<p>Вы хотите включить автоматический вход в систему?</p>"
+
+msgid "<p>Do you want to switch the Start Menu ?</p>"
+msgstr "<p>Вы хотите переключить Главное меню?</p>"
+
+msgid "<p>Start Menu is now set to Bourbon style.</p>"
+msgstr "<p>Главное меню теперь настроено на стиль Бурбон.</p>"
+
+msgid "<p>Start Menu is now set to Classic style.</p>"
+msgstr "<p>Главное меню теперь настроено на классический стиль.</p>"
+
+msgid "<p>Start Menu is now set to Kickoff style.</p>"
+msgstr "<p>Главное меню теперь настроено на стиль Kickoff.</p>"
+
+msgid "<p>This action is available for Trinity and Plasma desktops only.</p>"
+msgstr "<p>Это действие доступно только для рабочих столов Trinity и Plasma.</p>"
+
+msgid "<p>This action is available for Trinity desktop only.</p>"
+msgstr "<p>Это действие доступно только для рабочего стола Trinity.</p>"
+
+msgid "Apply"
+msgstr "Применить"
+
+msgid "Autologin configuration"
+msgstr "Настройка автовхода"
+
+msgid "Automatic login"
+msgstr "Автоматический вход"
+
+msgid "Bourbon"
+msgstr "Бурбон"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Categories"
+msgstr "Категории"
+
+msgid "Classic"
+msgstr "Классика"
+
+msgid "Classic style cascading menu"
+msgstr "Каскадное меню в классическом стиле"
+
+msgid "Desktop effects"
+msgstr "Эффекты рабочего стола"
+
+msgid "Do you really want to turn Desktop Effects on ?"
+msgstr "Вы все ещё хотите включить эффекты рабочего стола?"
+
+msgid "Do you want to turn Desktop Effects on ?"
+msgstr "Вы хотите включить эффекты рабочего стола?"
+
+msgid "Documents online"
+msgstr "Документы в сети"
+
+msgid "Donate to Q4OS"
+msgstr "Пожертвовать для Q4OS"
+
+msgid "Enable Autologin"
+msgstr "Включить автовход"
+
+msgid "Form2"
+msgstr "Форма2"
+
+msgid "Hardware info"
+msgstr "Сведения об оборудовании"
+
+msgid "Info"
+msgstr "Сведения"
+
+msgid "Install Applications"
+msgstr "Установить программы"
+
+msgid "Install Proprietary Codecs"
+msgstr "Установить сторонние кодеки"
+
+msgid "KickOff"
+msgstr "KickOff"
+
+msgid "KickOff type menu"
+msgstr "Тип меню KickOff"
+
+msgid "Menu items organized by Applications"
+msgstr "Пункты меню упорядочены по приложениям"
+
+msgid "Menu items organized by Categories"
+msgstr "Пункты меню упорядочены по категориям"
+
+msgid "Menu structure"
+msgstr "Структура меню"
+
+msgid "Menu type"
+msgstr "Тип меню"
+
+msgid "More options  >"
+msgstr "Другие действия  >"
+
+msgid "Note, desktop effects will work flawlessly on modern hardware only, it's not recommended to use it with legacy hardware. A short system testing will be performed to ensure the hardware is ready to accept the configuration."
+msgstr "Обратите внимание, что эффекты рабочего стола будут безупречно работать только на современном оборудовании, не рекомендуется использовать их на устаревшем оборудовании. Будет проведено короткое тестирование системы, чтобы убедиться, что оборудование готово принять конфигурацию."
+
+msgid "Q4OS"
+msgstr "Q4OS"
+
+msgid "Q4OS is installed as a very basic and clean desktop environment with the minimal software kit. Now it's the right time to adjust your new desktop, you might want to make use of tweaking shortcuts below."
+msgstr "Q4OS устанавливается как очень базовая и чистая среда рабочего стола с минимальным набором программ. Теперь самое время настроить ваш новый рабочий стол, возможно, вам пригодятся ярлыки настроек, приведённые ниже."
+
+msgid "Resize fonts and icons to adjust them according to the current screen resolution and make them more readable."
+msgstr "Подберите размер шрифтов и значков в соответствии с текущим разрешением экрана, чтобы сделать более понятными."
+
+msgid "Revert to Classic"
+msgstr "Вернуть классический вид"
+
+msgid "Revert to defaults"
+msgstr "Вернуть первоначальные настройки"
+
+msgid "Run Desktop Profiler"
+msgstr "Запуск Профайлера"
+
+msgid "Screen scaling"
+msgstr "Масштаб экрана"
+
+msgid "Screen scaling tool not found."
+msgstr "Инструмент масштабирования экрана не найден."
+
+msgid "Set Autologin"
+msgstr "Настроить автовход"
+
+msgid "Show this dialog on startup"
+msgstr "Показывать это окно при запуске"
+
+msgid "Start menu configuration"
+msgstr "Настройка Главного Меню"
+
+msgid "Support us on Patreon"
+msgstr "Поддержать нас в Patreon"
+
+msgid "Switch start menu"
+msgstr "Переключить главное меню"
+
+msgid "Switch to Bourbon"
+msgstr "Переключить на Бурбон"
+
+msgid "Switch to Kickoff"
+msgstr "Переключить на Kickoff"
+
+msgid "This option is to turn smoothing and beautifying desktop effects on."
+msgstr "Этот параметр позволяет включить эффекты сглаживания и украшения рабочего стола."
+
+msgid "Turn ON"
+msgstr "Включить"
+
+msgid "Two panel menu with search line"
+msgstr "Двухпанельное меню со строкой поиска"
+
+msgid "Warning !"
+msgstr "Внимание!"
+
+msgid "Welcome screen"
+msgstr "Окно приветствия"
+
+msgid "Welcome to Q4OS"
+msgstr "Добро пожаловать в Q4OS"
+
+msgid "Well arranged system hardware information."
+msgstr "Хорошо оформленная информация об аппаратном обеспечении системы."
+
+msgid "Working ..."
+msgstr "В работе…"
+
+msgid "Your hardware seems to be low to run desktop effects, it's not recommended to turn effects on."
+msgstr "Похоже, ваш компьютер слишком слаб для поддержки эффектов рабочего стола. Нормальная работа не гарантируется."
+
+msgid "fast and powerful desktop operating system focused on long-term stability, reliability and classic style user interface."
+msgstr "быстрая и мощная настольная операционная система, ориентированная на долгосрочную стабильность, надёжность и классический стиль пользовательского интерфейса."
+
+msgid "pushButton1"
+msgstr "pushButton1"
+
+msgid "pushButton2"
+msgstr "pushButton2"
+
+msgid "pushButton3"
+msgstr "pushButton3"
+
+msgid "pushButton4"
+msgstr "pushButton4"
+
+msgid "textLabel1"
+msgstr "текстоваяМетка1"
+
+#~ msgid "<p>NVIDIA installation has been detected !</p><p>Actions are disabled during NVIDIA setup, please wait until end of the NVIDIA installation.</p>"
+#~ msgstr "<p>Обнаружена установка NVIDIA!</p><p>Действия отключены во время установки NVIDIA, пожалуйста, дождитесь окончания установки NVIDIA.</p>"
+
+#~ msgid "<p>Virtualbox installation has been detected !</p><p>Actions are disabled during Virtualbox setup, please wait until end of the Virtualbox installation.</p>"
+#~ msgstr "<p>Обнаружена установка VirtualBox!</p><p>Действия отключены на время установки. Пожалуйста, дождитесь окончания процесса.</p>"
+
+#~ msgid "(C) 2019 Q4OS"
+#~ msgstr "(C) 2019 Q4OS"
+
+#~ msgid "Brief system info."
+#~ msgstr "Краткая системная сводка."
+
+#~ msgid "Turn on Desktop effects"
+#~ msgstr "Включить эффекты рабочего стола"
+
+#~ msgid "Close"
+#~ msgstr "Закрыть"
+
+#~ msgid "<p>Automatic login is now enabled.<p>"
+#~ msgstr "<p>Автоматический вход в систему включён.<p>"
+
+#~ msgid "<p>Automatic login is now disabled.<p>"
+#~ msgstr "<p>Автоматический вход в систему отключён.<p>"
+
+#~ msgid "<p>Start Menu is now set to Classic style.<p>"
+#~ msgstr "<p>Выбран классический стиль Меню запуска.<p>"
+
+#~ msgid "Welcome screen message"
+#~ msgstr "Сообщение окна приветствия"
+
+msgid "<p>No web browser is installed yet.</p><p>Please install one first, for example with Install Applications.</p>"
+msgstr "<p>Веб-браузер ещё не установлен.</p><p>Сначала установите его, например с помощью «Установить программы».</p>"

@@ -2,23 +2,36 @@ Source: q4os-welcome
 Section: system
 Priority: optional
 Maintainer: Q4OS_Team <devteam@q4os.org>
-Build-Depends: debhelper (>= 9~), tdelibs14-trinity-dev, q4os-api, q4os-api-dev
+Build-Depends: debhelper-compat (= 13), tqt3-dev-tools, tdelibs14-trinity-dev, cmake, qtbase5-dev, gettext
 Standards-Version: 3.8.4
+
+Package: q4os-welcome-common
+Architecture: all
+Depends: ${misc:Depends}
+Recommends:
+Conflicts: q4os-welcome (<< 4.2.1)
+Replaces: q4os-i18n (<< 3.17.4-a1)
+Breaks: q4os-i18n (<< 3.17.4-a1)
+Description: Q4OS welcome screen common files.
+ The icon, the header images and the welcome-screen translations shared
+ by the Trinity and the Plasma frontend.
 
 Package: q4os-welcome
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, q4os-api (>= 4.3.1-a1), q4os-cpuq, q4os-welcome-common
+Depends: ${shlibs:Depends}, ${misc:Depends}, q4os-cpuq, q4os-welcome-common (= ${source:Version})
 Recommends:
 Conflicts:
 Replaces:
 Breaks:
 Description: Q4OS welcome screen based on TDE libraries.
 
-Package: q4os-welcome-common
-Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Package: q4os-welcome5
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, q4os-cpuq5, q4os-welcome-common (= ${source:Version})
 Recommends:
-Conflicts: q4os-welcome (<< 4.2.1)
+Conflicts:
 Replaces:
 Breaks:
-Description: Q4OS welcome screen common files.
+Description: Q4OS welcome screen based on Qt libraries.
+ The Welcome screen for the Plasma desktop as plain Qt5, no TDE/KDE
+ dependency, the same forms and actions as the Trinity frontend.

@@ -1,3 +1,59 @@
+q4os-welcome (4.4.0-a4) UNRELEASED; urgency=medium
+
+  * Documents online, Patreon and Donate check for a web browser first: on a
+    system without one the page opened in Kate as HTML source; a short note
+    now says to install a browser.
+  * Qt5: at a fractional scale factor (Plasma X11 at 125%) the main panel's
+    border is drawn by a style sheet, as a QFrame Box loses its top line there.
+
+ -- Q4OS Team <devteam@q4os.org>  Sun, 27 Sep 2026 16:00:00 +0200
+
+q4os-welcome (4.4.0-a3) UNRELEASED; urgency=medium
+
+  * Plasma: "Screen scaling" no longer leaves the Welcome window hidden for
+    good. kcmshell keeps running after its window closed once the scale was
+    changed, and the shared code waited for it to exit; it now waits 30 s at
+    most, as the Qt frontend did before the split (QProcess default), and
+    leaves kcmshell running on its own. The Trinity scaler is unchanged.
+
+ -- Q4OS Team <devteam@q4os.org>  Sat, 26 Sep 2026 19:30:00 +0200
+
+q4os-welcome (4.4.0-a2) UNRELEASED; urgency=medium
+
+  * The dialogs of the buttons (desktop effects, autologin, screen scaling,
+    the Trinity-only note, the start menu confirmation) moved from the two
+    frontends into shared/ws_flows, on a small per-toolkit message box
+    interface (shared/ws_dialogs.h); the Trinity start menu dialog's three
+    copies of the apply code became one, as in the Qt frontend.
+
+ -- Q4OS Team <devteam@q4os.org>  Fri, 25 Sep 2026 21:00:00 +0200
+
+q4os-welcome (4.4.0-a1) UNRELEASED; urgency=medium
+
+  * One source for three packages, as q4os-sw-profiler, q4os-cpuq and q4os-updater are
+    built: q4os-welcome (the Trinity frontend), q4os-welcome5 (the Plasma frontend, now
+    plain Qt5 - no KF5, no q4os-api library - built here instead of from the separate
+    generated tree, which is retired) and q4os-welcome-common (icon, header images,
+    translations). Everything the buttons do lives in shared/, compiled into both
+    frontends, and so does the wording set from code, so the two can no longer drift.
+  * Ship the welcome-screen gettext catalog here instead of q4os-i18n, completed in
+    18 languages (cs de es es_AR fr he hu id it ja nl pl pt pt_BR ru tr uk zh_CN); the
+    .mo files stay in /usr/share/locale and reach TDE's /opt/trinity/share/locale as
+    symlinks, so the Trinity frontend is translated as well.
+  * Launch the Desktop Profiler through q4os-sw-profiler-common's desktop-profiler
+    launcher, which runs the frontend of the running session. No dependency on it: the
+    frontend is a hard dependency of the edition's q4os-desktop-* metapackage.
+  * q4os-welcome no longer depends on q4os-api (it no longer links its library).
+  * Install Applications runs the Software Centre through q4os-swcentre-common's
+    session-aware launcher (software-centre) instead of swcentre.exu directly, so a
+    Plasma session gets the Qt5 Software Centre (q4os-swcentre5).
+  * Qt5 frontend: the designer connections inherited from the KF5 forms are
+    removed from form1-3.ui - the classes connect their buttons explicitly, so
+    every handler ran TWICE (two Software Centres from one "Install
+    Applications" click, found by the a86 session QA).
+
+ -- Q4OS Team <devteam@q4os.org>  Fri, 25 Sep 2026 10:23:22 +0200
+
 q4os-welcome (4.3.3-a1) UNRELEASED; urgency=medium
 
   * Suppress the default dh_auto_configure, it breaks the rpi12 build

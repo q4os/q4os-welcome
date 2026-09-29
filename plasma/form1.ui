@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0" stdsetdef="1">
+  <author/>
+  <comment/>
+  <exportmacro/>
+  <class>TForm_ui_form1</class>
+  <widget class="QWidget" name="TForm_ui_form1">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>614</width>
+        <height>470</height>
+      </rect>
+    </property>
+    <property name="minimumSize">
+      <size>
+        <width>614</width>
+        <height>470</height>
+      </size>
+    </property>
+    <property name="windowTitle">
+      <string>Welcome screen</string>
+    </property>
+    <layout class="QVBoxLayout">
+      <item>
+        <widget class="QFrame" name="frame3">
+          <property name="frameShape">
+            <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+          </property>
+          <layout class="QVBoxLayout">
+            <property name="margin">
+              <number>2</number>
+            </property>
+            <item>
+              <widget class="QLabel" name="pixmapLabel1">
+                <property name="maximumSize">
+                  <size>
+                    <width>32767</width>
+                    <height>74</height>
+                  </size>
+                </property>
+                <property name="pixmap">
+                  <pixmap resource="resource1.qrc">:/newPrefix/background1.png</pixmap>
+                </property>
+                <property name="scaledContents">
+                  <bool>true</bool>
+                </property>
+                <property name="wordWrap">
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QLabel" name="textLabel1">
+                <property name="margin">
+                  <number>16</number>
+                </property>
+                <property name="text">
+                  <string>&lt;font size="4"&gt;&lt;p align=justify&gt;&lt;b&gt;Welcome to Q4OS&lt;/b&gt;, fast and powerful desktop operating system focused on long-term stability, reliability and classic style user interface.&lt;/p&gt;&lt;p align=justify&gt;Q4OS is installed as a very basic and clean desktop environment with the minimal software kit. Now it's the right time to adjust your new desktop, you might want to make use of tweaking shortcuts below.&lt;/p&gt;&lt;/font&gt;</string>
+                </property>
+                <property name="alignment">
+                  <set>Qt::AlignTop</set>
+                </property>
+                <property name="wordWrap">
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QFrame" name="frame6">
+                <property name="maximumSize">
+                  <size>
+                    <width>32767</width>
+                    <height>10</height>
+                  </size>
+                </property>
+                <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                  <enum>QFrame::Plain</enum>
+                </property>
+                <layout class="QHBoxLayout">
+                  <property name="margin">
+                    <number>0</number>
+                  </property>
+                  <item>
+                    <spacer name="spacer2">
+                      <property name="sizeHint">
+                        <size>
+                          <width>158</width>
+                          <height>16</height>
+                        </size>
+                      </property>
+                      <property name="sizeType">
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                  <item>
+                    <widget class="Line" name="line1">
+                      <property name="enabled">
+                        <bool>false</bool>
+                      </property>
+                      <property name="minimumSize">
+                        <size>
+                          <width>300</width>
+                          <height>0</height>
+                        </size>
+                      </property>
+                      <property name="maximumSize">
+                        <size>
+                          <width>360</width>
+                          <height>32767</height>
+                        </size>
+                      </property>
+                      <property name="frameShape">
+                        <enum>QFrame::HLine</enum>
+                      </property>
+                      <property name="frameShadow">
+                        <enum>QFrame::Sunken</enum>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer1">
+                      <property name="sizeHint">
+                        <size>
+                          <width>158</width>
+                          <height>16</height>
+                        </size>
+                      </property>
+                      <property name="sizeType">
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="QFrame" name="frame4">
+                <property name="minimumSize">
+                  <size>
+                    <width>0</width>
+                    <height>160</height>
+                  </size>
+                </property>
+                <property name="maximumSize">
+                  <size>
+                    <width>32767</width>
+                    <height>160</height>
+                  </size>
+                </property>
+                <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                  <enum>QFrame::Plain</enum>
+                </property>
+                <layout class="QGridLayout">
+                  <property name="margin">
+                    <number>18</number>
+                  </property>
+                  <property name="spacing">
+                    <number>20</number>
+                  </property>
+                  <item row="0" column="1">
+                    <widget class="QPushButton" name="pushButton1">
+                      <property name="sizePolicy">
+                        <sizepolicy>
+                          <hsizetype>5</hsizetype>
+                          <vsizetype>5</vsizetype>
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                        </sizepolicy>
+                      </property>
+                      <property name="cursor">
+                        <cursor>13</cursor>
+                      </property>
+                      <property name="text">
+                        <string>Install Applications</string>
+                      </property>
+                      <property name="autoDefault">
+                        <bool>false</bool>
+                      </property>
+                      <property name="toolTip" stdset="0">
+                        <string>&lt;font size="4"&gt;&lt;p&gt;You will be directed to Q4OS web resources to download and install standalone useful applications.&lt;/p&gt;&lt;/font&gt;</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="0" column="0">
+                    <widget class="QPushButton" name="pushButton2">
+                      <property name="sizePolicy">
+                        <sizepolicy>
+                          <hsizetype>5</hsizetype>
+                          <vsizetype>5</vsizetype>
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                        </sizepolicy>
+                      </property>
+                      <property name="cursor">
+                        <cursor>13</cursor>
+                      </property>
+                      <property name="text">
+                        <string>Run Desktop Profiler</string>
+                      </property>
+                      <property name="autoDefault">
+                        <bool>false</bool>
+                      </property>
+                      <property name="toolTip" stdset="0">
+                        <string>&lt;font size="4"&gt;&lt;p&gt;Desktop Profiler will automatically install and configure set of additional Applications and tools, all in single click.&lt;/p&gt;&lt;p&gt;You will be allowed to select between different desktop profiles.&lt;/p&gt;&lt;/font&gt;</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="0" column="2">
+                    <widget class="QPushButton" name="pushButton6">
+                      <property name="sizePolicy">
+                        <sizepolicy>
+                          <hsizetype>5</hsizetype>
+                          <vsizetype>5</vsizetype>
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                        </sizepolicy>
+                      </property>
+                      <property name="cursor">
+                        <cursor>13</cursor>
+                      </property>
+                      <property name="text">
+                        <string>Install Proprietary Codecs</string>
+                      </property>
+                      <property name="autoDefault">
+                        <bool>false</bool>
+                      </property>
+                      <property name="toolTip" stdset="0">
+                        <string>&lt;font size="4"&gt;&lt;p&gt;Run an interactive script to install extra collection of professional quality codecs.&lt;/p&gt;&lt;p&gt;Media players such as VLC or Mplayer make use of these codecs in order to provide support for playback of DVD and multimedia files encoded through these codecs.&lt;/p&gt;&lt;/font&gt;</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="1" column="0">
+                    <widget class="QPushButton" name="pushButton3">
+                      <property name="sizePolicy">
+                        <sizepolicy>
+                          <hsizetype>5</hsizetype>
+                          <vsizetype>5</vsizetype>
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                        </sizepolicy>
+                      </property>
+                      <property name="cursor">
+                        <cursor>13</cursor>
+                      </property>
+                      <property name="text">
+                        <string>Screen scaling</string>
+                      </property>
+                      <property name="autoDefault">
+                        <bool>false</bool>
+                      </property>
+                      <property name="toolTip" stdset="0">
+                        <string/>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="1" column="2">
+                    <widget class="QPushButton" name="pushButton4">
+                      <property name="sizePolicy">
+                        <sizepolicy>
+                          <hsizetype>5</hsizetype>
+                          <vsizetype>5</vsizetype>
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                        </sizepolicy>
+                      </property>
+                      <property name="cursor">
+                        <cursor>13</cursor>
+                      </property>
+                      <property name="text">
+                        <string>Switch start menu</string>
+                      </property>
+                      <property name="autoDefault">
+                        <bool>false</bool>
+                      </property>
+                      <property name="toolTip" stdset="0">
+                        <string>&lt;font size="4"&gt;&lt;p&gt;Switch to alternative Kickoff Start menu.&lt;/p&gt;&lt;p&gt;Well arranged, modern style start menu offers search bar, favorites tab, history and more.&lt;/p&gt;&lt;/font&gt;</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="1" column="1">
+                    <widget class="QPushButton" name="pushButton5">
+                      <property name="sizePolicy">
+                        <sizepolicy>
+                          <hsizetype>5</hsizetype>
+                          <vsizetype>5</vsizetype>
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                        </sizepolicy>
+                      </property>
+                      <property name="cursor">
+                        <cursor>13</cursor>
+                      </property>
+                      <property name="text">
+                        <string>Set Autologin</string>
+                      </property>
+                      <property name="autoDefault">
+                        <bool>false</bool>
+                      </property>
+                      <property name="toolTip" stdset="0">
+                        <string>&lt;font size="4"&gt;&lt;p&gt;Bypass login screen and login without entering your password after the system boot.&lt;/p&gt;&lt;/font&gt;</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <item>
+              <widget class="QFrame" name="frame5">
+                <property name="minimumSize">
+                  <size>
+                    <width>0</width>
+                    <height>40</height>
+                  </size>
+                </property>
+                <property name="maximumSize">
+                  <size>
+                    <width>32767</width>
+                    <height>45</height>
+                  </size>
+                </property>
+                <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                  <enum>QFrame::Plain</enum>
+                </property>
+                <layout class="QHBoxLayout">
+                  <item>
+                    <widget class="QCheckBox" name="checkBox1">
+                      <property name="sizePolicy">
+                        <sizepolicy>
+                          <hsizetype>7</hsizetype>
+                          <vsizetype>0</vsizetype>
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                        </sizepolicy>
+                      </property>
+                      <property name="text">
+                        <string>Show this dialog on startup</string>
+                      </property>
+                      <property name="checked">
+                        <bool>true</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="pushButton20">
+                      <property name="text">
+                        <string>More options  &gt;</string>
+                      </property>
+                      <property name="flat">
+                        <bool>true</bool>
+                      </property>
+                      <property name="toolTip" stdset="0">
+                        <string>&lt;font size="4"&gt;&lt;p&gt;Other useful configuration options.&lt;/p&gt;&lt;/font&gt;</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+          </layout>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <layoutdefault spacing="6" margin="11"/>
+  <tabstops>
+    <tabstop>checkBox1</tabstop>
+    <tabstop>pushButton2</tabstop>
+    <tabstop>pushButton1</tabstop>
+    <tabstop>pushButton6</tabstop>
+    <tabstop>pushButton3</tabstop>
+    <tabstop>pushButton5</tabstop>
+    <tabstop>pushButton4</tabstop>
+    <tabstop>pushButton20</tabstop>
+  </tabstops>
+ <connections/>
+</ui>

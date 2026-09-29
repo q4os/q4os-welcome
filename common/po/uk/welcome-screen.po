@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Q4OS Welcome Screen package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Q4OS Welcome Screen\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-25 08:28+0000\n"
+"PO-Revision-Date: 2026-09-25 10:27+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Q4OS uk <devteam@q4os.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "<font size=\"4\"><p align=justify><b>Welcome to Q4OS</b>, fast and powerful desktop operating system focused on long-term stability, reliability and classic style user interface.</p><p align=justify>Q4OS is installed as a very basic and clean desktop environment with the minimal software kit. Now it's the right time to adjust your new desktop, you might want to make use of tweaking shortcuts below.</p></font>"
+msgstr "<font size=\"4\"><p align=justify><b>Ласкаво просимо до Q4OS</b> - швидкої та потужної стільничної операційної системи, зосередженої на довготривалій стабільності, надійності та інтерфейсі користувача в класичному стилі.</p><p align=justify>Q4OS встановлено як дуже базове й чисте стільничне середовище з мінімальним набором програм. Саме час налаштувати вашу нову стільницю - скористайтеся ярликами для тонкого налаштування нижче.</p></font>"
+
+msgid "<font size=\"4\"><p>Bypass login screen and login without entering your password after the system boot.</p></font>"
+msgstr "<font size=\"4\"><p>Оминути екран входу і входити до системи після завантаження без введення пароля.</p></font>"
+
+msgid "<font size=\"4\"><p>Desktop Profiler will automatically install and configure set of additional Applications and tools, all in single click.</p><p>You will be allowed to select between different desktop profiles.</p></font>"
+msgstr "<font size=\"4\"><p>Desktop Profiler автоматично встановить і налаштує набір додаткових програм та інструментів - усе одним клацанням.</p><p>Ви зможете вибрати з-поміж різних профілів стільниці.</p></font>"
+
+msgid "<font size=\"4\"><p>Other useful configuration options.</p></font>"
+msgstr "<font size=\"4\"><p>Інші корисні параметри налаштування.</p></font>"
+
+msgid "<font size=\"4\"><p>Run an interactive script to install extra collection of professional quality codecs.</p><p>Media players such as VLC or Mplayer make use of these codecs in order to provide support for playback of DVD and multimedia files encoded through these codecs.</p></font>"
+msgstr "<font size=\"4\"><p>Запустити інтерактивний скрипт для встановлення додаткової збірки кодеків професійної якості.</p><p>Медіапрогравачі, як-от VLC чи Mplayer, використовують ці кодеки для відтворення DVD та мультимедійних файлів, закодованих ними.</p></font>"
+
+msgid "<font size=\"4\"><p>Switch to alternative Kickoff Start menu.</p><p>Well arranged, modern style start menu offers search bar, favorites tab, history and more.</p></font>"
+msgstr "<font size=\"4\"><p>Перейти на альтернативне меню «Пуск» Kickoff.</p><p>Упорядковане сучасне меню «Пуск» має рядок пошуку, вкладку улюбленого, історію та інше.</p></font>"
+
+msgid "<font size=\"4\"><p>You will be directed to Q4OS web resources to download and install standalone useful applications.</p></font>"
+msgstr "<font size=\"4\"><p>Вас буде спрямовано до вебресурсів Q4OS, звідки можна завантажити та встановити корисні окремі програми.</p></font>"
+
+msgid "<p>Automatic login is now disabled.</p>"
+msgstr "<p>Автоматичний вхід тепер вимкнено.</p>"
+
+msgid "<p>Automatic login is now enabled.</p>"
+msgstr "<p>Автоматичний вхід тепер увімкнено.</p>"
+
+msgid "<p>Desktop effects have been disabled.</p>"
+msgstr "<p>Ефекти стільниці вимкнено.</p>"
+
+msgid "<p>Desktop effects have been enabled. Please login again to take changes effect.</p>"
+msgstr "<p>Ефекти стільниці увімкнено. Щоб зміни набули чинності, увійдіть до системи ще раз.</p>"
+
+msgid "<p>Do you want to enable Automatic login ?</p>"
+msgstr "<p>Увімкнути автоматичний вхід?</p>"
+
+msgid "<p>Do you want to switch the Start Menu ?</p>"
+msgstr "<p>Змінити меню «Пуск»?</p>"
+
+msgid "<p>Start Menu is now set to Bourbon style.</p>"
+msgstr "<p>Меню «Пуск» тепер має стиль Bourbon.</p>"
+
+msgid "<p>Start Menu is now set to Classic style.</p>"
+msgstr "<p>Меню «Пуск» тепер має класичний стиль.</p>"
+
+msgid "<p>Start Menu is now set to Kickoff style.</p>"
+msgstr "<p>Меню «Пуск» тепер має стиль Kickoff.</p>"
+
+msgid "<p>This action is available for Trinity and Plasma desktops only.</p>"
+msgstr "<p>Ця дія доступна лише для стільниць Trinity та Plasma.</p>"
+
+msgid "<p>This action is available for Trinity desktop only.</p>"
+msgstr "<p>Ця дія доступна лише для стільниці Trinity.</p>"
+
+msgid "Apply"
+msgstr "Застосувати"
+
+msgid "Autologin configuration"
+msgstr "Налаштування автоматичного входу"
+
+msgid "Automatic login"
+msgstr "Автоматичний вхід"
+
+msgid "Bourbon"
+msgstr "Bourbon"
+
+msgid "Cancel"
+msgstr "Скасувати"
+
+msgid "Categories"
+msgstr "Категорії"
+
+msgid "Classic"
+msgstr "Класичне"
+
+msgid "Classic style cascading menu"
+msgstr "Класичне каскадне меню"
+
+msgid "Desktop effects"
+msgstr "Ефекти стільниці"
+
+msgid "Do you really want to turn Desktop Effects on ?"
+msgstr "Ви справді бажаєте увімкнути ефекти стільниці?"
+
+msgid "Do you want to turn Desktop Effects on ?"
+msgstr "Увімкнути ефекти стільниці?"
+
+msgid "Documents online"
+msgstr "Документація в Інтернеті"
+
+msgid "Donate to Q4OS"
+msgstr "Підтримати Q4OS пожертвою"
+
+msgid "Enable Autologin"
+msgstr "Увімкнути автоматичний вхід"
+
+msgid "Form2"
+msgstr "Form2"
+
+msgid "Hardware info"
+msgstr "Відомості про обладнання"
+
+msgid "Info"
+msgstr "Інформація"
+
+msgid "Install Applications"
+msgstr "Встановити програми"
+
+msgid "Install Proprietary Codecs"
+msgstr "Встановити пропрієтарні кодеки"
+
+msgid "KickOff"
+msgstr "KickOff"
+
+msgid "KickOff type menu"
+msgstr "Меню типу KickOff"
+
+msgid "Menu items organized by Applications"
+msgstr "Пункти меню впорядковано за програмами"
+
+msgid "Menu items organized by Categories"
+msgstr "Пункти меню впорядковано за категоріями"
+
+msgid "Menu structure"
+msgstr "Структура меню"
+
+msgid "Menu type"
+msgstr "Тип меню"
+
+msgid "More options  >"
+msgstr "Інші параметри  >"
+
+msgid "Note, desktop effects will work flawlessly on modern hardware only, it's not recommended to use it with legacy hardware. A short system testing will be performed to ensure the hardware is ready to accept the configuration."
+msgstr "Зауважте: ефекти стільниці бездоганно працюють лише на сучасному обладнанні, використовувати їх на застарілому не рекомендується. Буде виконано коротку перевірку системи, щоб переконатися, що обладнання готове до такого налаштування."
+
+msgid "Q4OS"
+msgstr "Q4OS"
+
+msgid "Q4OS is installed as a very basic and clean desktop environment with the minimal software kit. Now it's the right time to adjust your new desktop, you might want to make use of tweaking shortcuts below."
+msgstr "Q4OS встановлено як дуже базове й чисте стільничне середовище з мінімальним набором програм. Саме час налаштувати вашу нову стільницю - скористайтеся ярликами для тонкого налаштування нижче."
+
+msgid "Resize fonts and icons to adjust them according to the current screen resolution and make them more readable."
+msgstr "Змінити розмір шрифтів та піктограм відповідно до поточної роздільної здатності екрана, щоб їх було легше читати."
+
+msgid "Revert to Classic"
+msgstr "Повернути класичне"
+
+msgid "Revert to defaults"
+msgstr "Повернути типові"
+
+msgid "Run Desktop Profiler"
+msgstr "Запустити Desktop Profiler"
+
+msgid "Screen scaling"
+msgstr "Масштабування екрана"
+
+msgid "Screen scaling tool not found."
+msgstr "Інструмент масштабування екрана не знайдено."
+
+msgid "Set Autologin"
+msgstr "Налаштувати автоматичний вхід"
+
+msgid "Show this dialog on startup"
+msgstr "Показувати це вікно під час запуску"
+
+msgid "Start menu configuration"
+msgstr "Налаштування меню «Пуск»"
+
+msgid "Support us on Patreon"
+msgstr "Підтримайте нас на Patreon"
+
+msgid "Switch start menu"
+msgstr "Змінити меню «Пуск»"
+
+msgid "Switch to Bourbon"
+msgstr "Перейти на Bourbon"
+
+msgid "Switch to Kickoff"
+msgstr "Перейти на Kickoff"
+
+msgid "This option is to turn smoothing and beautifying desktop effects on."
+msgstr "Цей параметр вмикає ефекти стільниці, що згладжують і прикрашають її."
+
+msgid "Turn ON"
+msgstr "Увімкнути"
+
+msgid "Two panel menu with search line"
+msgstr "Двопанельне меню з рядком пошуку"
+
+msgid "Warning !"
+msgstr "Попередження!"
+
+msgid "Welcome screen"
+msgstr "Вітальний екран"
+
+msgid "Welcome to Q4OS"
+msgstr "Ласкаво просимо до Q4OS"
+
+msgid "Well arranged system hardware information."
+msgstr "Упорядковані відомості про обладнання системи."
+
+msgid "Working ..."
+msgstr "Виконується ..."
+
+msgid "Your hardware seems to be low to run desktop effects, it's not recommended to turn effects on."
+msgstr "Схоже, ваше обладнання заслабке для ефектів стільниці, вмикати їх не рекомендується."
+
+msgid "fast and powerful desktop operating system focused on long-term stability, reliability and classic style user interface."
+msgstr "швидкої та потужної стільничної операційної системи, зосередженої на довготривалій стабільності, надійності та інтерфейсі користувача в класичному стилі."
+
+msgid "pushButton1"
+msgstr "pushButton1"
+
+msgid "pushButton2"
+msgstr "pushButton2"
+
+msgid "pushButton3"
+msgstr "pushButton3"
+
+msgid "pushButton4"
+msgstr "pushButton4"
+
+msgid "textLabel1"
+msgstr "textLabel1"
+
+#~ msgid "<p>NVIDIA installation has been detected !</p><p>Actions are disabled during NVIDIA setup, please wait until end of the NVIDIA installation.</p>"
+#~ msgstr "<p>Виявлено встановлення NVIDIA!</p><p>Під час встановлення NVIDIA дії вимкнено, зачекайте, будь ласка, до його завершення.</p>"
+
+#~ msgid "<p>Virtualbox installation has been detected !</p><p>Actions are disabled during Virtualbox setup, please wait until end of the Virtualbox installation.</p>"
+#~ msgstr "<p>Виявлено встановлення Virtualbox!</p><p>Під час встановлення Virtualbox дії вимкнено, зачекайте, будь ласка, до його завершення.</p>"
+
+msgid "<p>No web browser is installed yet.</p><p>Please install one first, for example with Install Applications.</p>"
+msgstr "<p>Веб-браузер ще не встановлено.</p><p>Спочатку встановіть його, наприклад за допомогою «Встановити програми».</p>"
