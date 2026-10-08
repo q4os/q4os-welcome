@@ -1,3 +1,14 @@
+q4os-welcome (4.4.0-a5) UNRELEASED; urgency=medium
+
+  * Automatic login outside Trinity asks for the password through polkit
+    (pkexec) instead of tdesudo, so the Qt5 frontend needs no Trinity program
+    for it. Trinity keeps tdesudo.
+  * q4os-welcome5 depends on pkexec | policykit-1 for that.
+  * The menu entry names of both frontends are translated in ten languages
+    (Name[xx] lines from the q4os-shortcuts catalog of q4os-i18n).
+
+ -- Q4OS Team <devteam@q4os.org>  Mon, 05 Oct 2026 18:00:00 +0200
+
 q4os-welcome (4.4.0-a4) UNRELEASED; urgency=medium
 
   * Documents online, Patreon and Donate check for a web browser first: on a

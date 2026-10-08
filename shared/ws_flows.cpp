@@ -41,11 +41,9 @@ void ws_flow_autologin( WsDialogs &d, const WsSystem &sys )
 {
   const int res1 = d.ask3( d.tr(WS_STR_AUTOLOGIN_CONFIG), d.tr(WS_STR_AUTOLOGIN_ASK), d.tr(WS_STR_AUTOLOGIN_ENABLE), d.tr(WS_STR_REVERT_DEFAULTS), false );
   if( res1 == 1 ) {
-    ws_autologin( true, sys );
-    if( ws_sudo_ok() ) d.info( d.tr(WS_STR_AUTOLOGIN), d.tr(WS_STR_AUTOLOGIN_ENABLED) );
+    if( ws_autologin( true, sys ) ) d.info( d.tr(WS_STR_AUTOLOGIN), d.tr(WS_STR_AUTOLOGIN_ENABLED) );
   } else if( res1 == 0 ) {
-    ws_autologin( false, sys );
-    if( ws_sudo_ok() ) d.info( d.tr(WS_STR_AUTOLOGIN), d.tr(WS_STR_AUTOLOGIN_DISABLED) );
+    if( ws_autologin( false, sys ) ) d.info( d.tr(WS_STR_AUTOLOGIN), d.tr(WS_STR_AUTOLOGIN_DISABLED) );
   }
 }
 //---------------------------------------------------------------------------

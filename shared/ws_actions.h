@@ -32,9 +32,9 @@ void ws_install_codecs(); //Install Proprietary Codecs (background)
 bool ws_screen_scaling( const WsSystem &sys );
 void ws_hw_info( const WsSystem &sys ); //background
 //---------------------------------------------------------------------------
-//--- automatic login (asks for the password itself through tdesudo) ---
-void ws_autologin( bool enable, const WsSystem &sys );
-bool ws_sudo_ok(); //the password was given: sudo works without asking now
+//--- automatic login (asks for the password itself: tdesudo in Trinity, polkit elsewhere) ---
+bool ws_autologin( bool enable, const WsSystem &sys ); //true: the password was given and the change made
+bool ws_sudo_ok(); //the password was given to tdesudo: sudo works without asking now
 //---------------------------------------------------------------------------
 //--- desktop effects ---
 enum { ws_effects_none = 0, ws_effects_trinity = 1, ws_effects_plasma = 2 };

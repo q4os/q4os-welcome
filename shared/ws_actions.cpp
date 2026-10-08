@@ -150,16 +150,21 @@ void ws_hw_info( const WsSystem &sys )
   ws_background( sys.hwinfo_cmd );
 }
 //---------------------------------------------------------------------------
-void ws_autologin( bool enable, const WsSystem &sys )
+bool ws_autologin( bool enable, const WsSystem &sys )
 {
-  if( enable ) {
-    if( sys.session == "trinity" )
+  if( sys.session == "trinity" ) {
+    if( enable )
       system("tdesudo --comment \"Please enter your password for verification:\" -d --noignorebutton \"ctrl-autologin --enable\"");
-    if( sys.session == "plasma" )
-      system("tdesudo --comment \"Please enter your password for verification:\" -d --noignorebutton \"ctrl-autologin --enable\" \"\" \"\" \"plasma.desktop\"");
-  } else {
-    system("tdesudo --comment \"Please enter your password for verification:\" -d --noignorebutton \"ctrl-autologin --disable\"");
+    else
+      system("tdesudo --comment \"Please enter your password for verification:\" -d --noignorebutton \"ctrl-autologin --disable\"");
+    return ws_sudo_ok();
   }
+  //the other sessions ask through polkit; pkexec's exit code tells whether the password was given
+  if( enable ) {
+    if( sys.session != "plasma" ) return false;
+    return system("pkexec ctrl-autologin --enable \"\" \"\" \"plasma.desktop\"") == 0;
+  }
+  return system("pkexec ctrl-autologin --disable") == 0;
 }
 //---------------------------------------------------------------------------
 bool ws_sudo_ok()

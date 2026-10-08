@@ -27,7 +27,7 @@ Description: Q4OS welcome screen based on TDE libraries.
 
 Package: q4os-welcome5
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, q4os-cpuq5, q4os-welcome-common (= ${source:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}, q4os-cpuq5, q4os-welcome-common (= ${source:Version}), pkexec | policykit-1
 Recommends:
 Conflicts:
 Replaces:
